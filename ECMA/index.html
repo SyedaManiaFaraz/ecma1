@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMA</title>
+</head>
+<body>
+</body>
+ <script>
+  // let 
+let a=10;
+if(true){
+    let a=20;
+    console.log(a)
+}
+console.log(a)
+
+for(let i=0;i<10;i++){
+   setTimeout(()=>{
+    console.log(i)
+   },1000)
+}
+
+
+  // var
+var b=10;
+if(true){
+    var b=20;
+    console.log(a)
+}
+console.log(a)
+
+for(var i=0;i<10;i++){
+   setTimeout(()=>{
+    console.log(i)
+   },1000)
+} 
+
+  // default parameters
+function add()
+{
+    return 10+10;
+}
+console.log(add())
+
+function someVal()
+{
+    return 100;
+}
+function add(a,b=10,c=someVal()){
+    return a+b+c;
+}
+console.log(add(10));
+
+   // template literals
+let sent ="This is me" ;
+let by = 'Mania';
+console.log(`This is me 
+Mania`
+)
+</script>
+</html>
